@@ -21,29 +21,24 @@
         "experiencePosition": "Desarrollador Front-End, 2020 - 2022",
         "experienceCompany": "Autónomo",
         "experienceDescr": "Implementación de sitios web y aplicaciones móviles con un enfoque responsivo y mobile-first desde el concepto hasta el despliegue, mientras se mantienen, optimizan, solucionan problemas y mejoran constantemente los sitios web para varios clientes."
-      },
-      "utest": {
-        "experiencePosition": "Probador de garantía de calidad, 2018 - 2020",
-        "experienceCompany": "uTest, Testbirds, testIO",
-        "experienceDescr": "Encontrar y notificar errores y fallos mediante pruebas manuales. Garantizar que los productos, aplicaciones y sistemas funcionan correctamente y que se cumplen las expectativas de los usuarios durante el proceso de pruebas."
       }
     },
     "educationTitle": "EDUCACIÓN",
     "educationData": {
       "rssSchool": {
         "educationPosition": "Desarrollo Front-End / JavaScript, 2021 - 2022",
-        "educationDescr": "The Rolling Scopes School (Online)"
+        "educationDescr": "The Rolling Scopes School"
       },
       "freeCode": {
-        "educationPosition": "Diseño web con capacidad de respuesta, Algoritmos y estructuras de datos de JavaScript, 2019",
-        "educationDescr": "FreeCode Camp (Online)"
+        "educationPosition": "Certificado de competencia lingüística Inglés CEFR B1, 2022",
+        "educationDescr": "GoFluent"
       },
       "fitness": {
-        "educationPosition": "Entrenador personal certificado, 2014",
-        "educationDescr": "Bali Fitness Club"
+        "educationPosition": "Reglamento General de Protección de Datos (GDPR",
+        "educationDescr": "MGSI - External DPO - GDPR Compliance - Loi 25 in Quebec"
       },
       "college": {
-        "educationPosition": "Facultad de Ciencias Empresariales, Derecho y Ciencias Sociales, 2006",
+        "educationPosition": "Formación Profesional Grado Medio, Derecho y Ciencias Sociales, 2004 - 2007",
         "educationDescr": "Business Institute"
       }
     },

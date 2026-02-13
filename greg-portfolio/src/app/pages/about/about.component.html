@@ -1,100 +1,131 @@
 <div class="about">
-    <div class="wrapper">
-        @if(isContentLoadedService.isTranslationLoaded()) {
-            <div class="page-section-name">
-                <h1>{{ 'about.pageSectionName' | translate }}
-                    <span> {{ 'about.pageSectionName' | translate }} </span>
-                </h1>
-            </div>
-
-            <div class="about-wrapper">
-                <div class="about-content">
-                    <section class="about-me">
-                        <p>
-                            {{ 'about.aboutMe' | translate }}
-                        </p>
-                        <button class="about-button button" (click)='downloadCV()'
-                        title="Download cv">{{ 'about.downloadSv' | translate }}
-                            <svg-icon class="about-download-icon" src="./assets/icons/download.svg"></svg-icon>
-                        </button>
-                    </section>
-
-                    <section class="about-works section">
-                        <h2 class="section-title">
-                            {{ 'about.experienceTitle' | translate }}
-                        </h2>
-
-                        <div class="work">
-                            <span class="position"> {{ 'about.workData.gcore.experiencePosition' | translate }} </span>
-                            <span class="company">{{ 'about.workData.gcore.experienceCompany' | translate }}</span>
-                            <p class="descr">
-                                {{ 'about.workData.gcore.experienceDescr' | translate }}
-                            </p>
-                        </div>
-
-                        <div class="work">
-                            <span class="position"> {{ 'about.workData.freelance.experiencePosition' | translate }} </span>
-                            <span class="company">{{ 'about.workData.freelance.experienceCompany' | translate }}</span>
-                            <p class="descr">
-                                {{ 'about.workData.freelance.experienceDescr' | translate }}
-                            </p>
-                        </div>
-
-                        <div class="work">
-                            <span class="position"> {{ 'about.workData.utest.experiencePosition' | translate }} </span>
-                            <span class="company">{{ 'about.workData.utest.experienceCompany' | translate }}</span>
-                            <p class="descr">
-                                {{ 'about.workData.utest.experienceDescr' | translate }}
-                            </p>
-                        </div>
-                    </section>
-
-                    <section class="about-education section">
-                        <h2 class="section-title">
-                            {{ 'about.educationTitle' | translate }}
-                        </h2>
-
-                        <div class="education">
-                            <span class="position">{{ 'about.educationData.rssSchool.educationPosition' | translate }}</span>
-                            <span class="descr">{{ 'about.educationData.rssSchool.educationDescr' | translate }}</span>
-                        </div>
-
-                        <div class="education">
-                            <span class="position">{{ 'about.educationData.freeCode.educationPosition' | translate }}</span>
-                            <span class="descr">{{ 'about.educationData.freeCode.educationDescr' | translate }}</span>
-                        </div>
-
-                        <div class="education">
-                            <span class="position">{{ 'about.educationData.fitness.educationPosition' | translate }}</span>
-                            <span class="descr">{{ 'about.educationData.fitness.educationDescr' | translate }}</span>
-                        </div>
-
-                        <div class="education">
-                            <span class="position">{{ 'about.educationData.college.educationPosition' | translate }}</span>
-                            <span class="descr">{{ 'about.educationData.college.educationDescr' | translate }}</span>
-                        </div>
-                    </section>
-
-                    <section class="about-education section">
-                        <h2 class="section-title">
-                            {{ 'about.languageTitle' | translate }}
-                        </h2>
-
-                        <div class="education">
-                            <span class="position lang">{{ 'about.languageData.en' | translate }} | </span>
-                            <span class="position lang">{{ 'about.languageData.es' | translate }} | </span>
-                            <span class="position lang">{{ 'about.languageData.arm' | translate }} | </span>
-                            <span class="position lang"> {{ 'about.languageData.ru' | translate }}</span>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="about-image">
-                    <img [src]="'./assets/pages/about/about-me-' + currentLang + '.gif'">
-                </div>
-            </div>
-        } @else {
-            <app-loader></app-loader>
-        }
+  <div class="wrapper">
+    @if(isContentLoadedService.isTranslationLoaded()) {
+    <div class="page-section-name">
+      <h1>
+        {{ "about.pageSectionName" | translate }}
+        <span> {{ "about.pageSectionName" | translate }} </span>
+      </h1>
     </div>
+
+    <div class="about-wrapper">
+      <div class="about-content">
+        <section class="about-me">
+          <p>
+            {{ "about.aboutMe" | translate }}
+          </p>
+          <button
+            class="about-button button"
+            (click)="downloadCV()"
+            title="Download cv"
+          >
+            {{ "about.downloadSv" | translate }}
+            <svg-icon
+              class="about-download-icon"
+              src="./assets/icons/download.svg"
+            ></svg-icon>
+          </button>
+        </section>
+
+        <section class="about-works section">
+          <h2 class="section-title">
+            {{ "about.experienceTitle" | translate }}
+          </h2>
+
+          <div class="work">
+            <span class="position">
+              {{ "about.workData.gcore.experiencePosition" | translate }}
+            </span>
+            <span class="company">{{
+              "about.workData.gcore.experienceCompany" | translate
+            }}</span>
+            <p class="descr">
+              {{ "about.workData.gcore.experienceDescr" | translate }}
+            </p>
+          </div>
+
+          <div class="work">
+            <span class="position">
+              {{ "about.workData.freelance.experiencePosition" | translate }}
+            </span>
+            <span class="company">{{
+              "about.workData.freelance.experienceCompany" | translate
+            }}</span>
+            <p class="descr">
+              {{ "about.workData.freelance.experienceDescr" | translate }}
+            </p>
+          </div>
+        </section>
+
+        <section class="about-education section">
+          <h2 class="section-title">
+            {{ "about.educationTitle" | translate }}
+          </h2>
+
+          <div class="education">
+            <span class="position">{{
+              "about.educationData.fitness.educationPosition" | translate
+            }}</span>
+            <span class="descr">{{
+              "about.educationData.fitness.educationDescr" | translate
+            }}</span>
+          </div>
+
+          <div class="education">
+            <span class="position">{{
+              "about.educationData.freeCode.educationPosition" | translate
+            }}</span>
+            <span class="descr">{{
+              "about.educationData.freeCode.educationDescr" | translate
+            }}</span>
+          </div>
+
+          <div class="education">
+            <span class="position">{{
+              "about.educationData.rssSchool.educationPosition" | translate
+            }}</span>
+            <span class="descr">{{
+              "about.educationData.rssSchool.educationDescr" | translate
+            }}</span>
+          </div>
+          <div class="education">
+            <span class="position">{{
+              "about.educationData.college.educationPosition" | translate
+            }}</span>
+            <span class="descr">{{
+              "about.educationData.college.educationDescr" | translate
+            }}</span>
+          </div>
+        </section>
+
+        <section class="about-education section">
+          <h2 class="section-title">
+            {{ "about.languageTitle" | translate }}
+          </h2>
+
+          <div class="education">
+            <span class="position lang"
+              >{{ "about.languageData.en" | translate }} |
+            </span>
+            <span class="position lang"
+              >{{ "about.languageData.es" | translate }} |
+            </span>
+            <span class="position lang"
+              >{{ "about.languageData.arm" | translate }} |
+            </span>
+            <span class="position lang">
+              {{ "about.languageData.ru" | translate }}</span
+            >
+          </div>
+        </section>
+      </div>
+
+      <div class="about-image">
+        <img [src]="'./assets/pages/about/about-me-' + currentLang + '.gif'" />
+      </div>
+    </div>
+    } @else {
+    <app-loader></app-loader>
+    }
+  </div>
 </div>

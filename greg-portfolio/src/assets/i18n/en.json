@@ -21,29 +21,24 @@
         "experiencePosition": "Front-End Developer, 2020 - 2022",
         "experienceCompany": "Freelance",
         "experienceDescr": "Implementing websites and mobile applications with a responsive, mobile-first approach from concept through deployment, while constantly maintaining, optimizing, troubleshooting, and improving websites for various clients."
-      },
-      "utest": {
-        "experiencePosition": "Quality Assurance Tester, 2018 - 2020",
-        "experienceCompany": "uTest, Testbirds, testIO",
-        "experienceDescr": "Finding and reporting bugs and glitches, through manual testing. Ensuring that products, applications and systems work correctly and that user expectations are met during the testing process."
       }
     },
     "educationTitle": "EDUCATION",
     "educationData": {
+      "fitness": {
+        "educationPosition": "General Data Protection Regulation (GDPR), 2023",
+        "educationDescr": "MGSI - External DPO - GDPR Compliance - Loi 25 in Quebec"
+      },
       "rssSchool": {
-        "educationPosition": "Front-End Development / JavaScript, 2021 - 2022",
-        "educationDescr": "The Rolling Scopes School (Online)"
+        "educationPosition": "Front-End / JavaScript, 2021 - 2022",
+        "educationDescr": "The Rolling Scopes School"
       },
       "freeCode": {
-        "educationPosition": "Responsive Web Design, JavaScript Algorithms & Data Structures, 2019",
-        "educationDescr": "FreeCode Camp (Online)"
-      },
-      "fitness": {
-        "educationPosition": "Certified Personal Trainer, 2014",
-        "educationDescr": "Bali Fitness Club"
+        "educationPosition": "Certificate of Language Proficiency English CEFR B1, 2022",
+        "educationDescr": "GoFluent"
       },
       "college": {
-        "educationPosition": "College of Business, Law and Social Sciences, 2006",
+        "educationPosition": "Secondary vocational education, Law and Social Sciences, 2004 - 2007",
         "educationDescr": "Business Institute"
       }
     },
