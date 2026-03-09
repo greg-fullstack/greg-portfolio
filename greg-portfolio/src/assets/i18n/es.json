@@ -2,8 +2,8 @@
   "home": {
     "pageSectionName": "Hola",
     "title": "Soy Greg Martirosian",
-    "titleSpan": "Ingeniero de software front-end",
-    "firstDescr": "¡Hola y bienvenido, gracias por visitar mi portfolio! Como desarrollador frontend con pasión por Angular, me enfoco en crear experiencias de usuario intuitivas y atractivas.",
+    "titleSpan": "Ingeniero de software",
+    "firstDescr": "¡Hola y bienvenido, gracias por visitar mi portfolio! Como ingeniero de software, me enfoco en crear experiencias de usuario intuitivas y atractivas.",
     "secondDescr": "Aquí puedes descubrir mis últimos proyectos, profundizar en mis habilidades y ver las soluciones innovadoras que he desarrollado. ¡Estoy emocionado de compartir mi trabajo contigo!"
   },
   "about": {
@@ -12,21 +12,21 @@
     "downloadSv": "Descargar Currículum",
     "experienceTitle": "EXPERIENCIAS",
     "workData": {
+      "sicomoro": {
+        "experiencePosition": "Desarrollador Front-End Angular, 2024 - Presente",
+        "experienceCompany": "Sicomoro",
+        "experienceDescr": "TTrabajé en el desarrollo de soluciones de reserva de entradas para museos, teatros y espacios culturales. Desarrollé y mantuve interfaces utilizando Angular 16, NgRx, Angular Material y Bootstrap. Integré la lógica del frontend con APIs de backend para gestionar reservas. Participé en procesos de CI/CD con Azure Pipelines, asegurando despliegues estables y una entrega continua. Me enfoqué en la optimización del rendimiento, la gestión del estado y la creación de flujos de usuario fiables para plataformas de ticketing con alto tráfico."
+      },
       "gcore": {
-        "experiencePosition": "Desarrollador Front-End Angular, 2022 - Presente",
+        "experiencePosition": "Ingeniero de software, 2022 - 2024",
         "experienceCompany": "Gcore",
         "experienceDescr": "Trabajó en el sitio web de la empresa. Con la ayuda de angular, cree la interfaz de usuario/UX y la parte lógica del sitio. Trabajé en una calculadora donde se implementó lógica compleja y peticiones al servidor de datos para la calculadora. Utilicé node.js y el framework nest para el backend."
-      },
-      "freelance": {
-        "experiencePosition": "Desarrollador Front-End, 2020 - 2022",
-        "experienceCompany": "Autónomo",
-        "experienceDescr": "Implementación de sitios web y aplicaciones móviles con un enfoque responsivo y mobile-first desde el concepto hasta el despliegue, mientras se mantienen, optimizan, solucionan problemas y mejoran constantemente los sitios web para varios clientes."
       }
     },
     "educationTitle": "EDUCACIÓN",
     "educationData": {
       "rssSchool": {
-        "educationPosition": "Desarrollo Front-End / JavaScript, 2021 - 2022",
+        "educationPosition": "Ingeniero de software, 2021 - 2022",
         "educationDescr": "The Rolling Scopes School"
       },
       "freeCode": {

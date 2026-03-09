@@ -2,8 +2,8 @@
   "home": {
     "pageSectionName": "Hello",
     "title": "I'm Greg Martirosian",
-    "titleSpan": "Front-End Software Engineer",
-    "firstDescr": "Hi, thank you for visiting my portfolio! As a frontend developer with a passion for Angular, I focus on crafting intuitive and engaging user experiences. ",
+    "titleSpan": "Software Engineer",
+    "firstDescr": "Hi, thank you for visiting my portfolio! As a sofware engineer, I focus on crafting intuitive and engaging user experiences. ",
     "secondDescr": "Here, you can discover my latest projects, dive into my skill set, and see the innovative solutions I've developed. I'm excited to share my work with you!"
   },
   "about": {
@@ -12,15 +12,15 @@
     "downloadSv": "Download CV",
     "experienceTitle": "EXPERIENCES",
     "workData": {
+      "sicomoro": {
+        "experiencePosition": "Angular Front-End Developer, 2024 - Present",
+        "experienceCompany": "Sicomoro",
+        "experienceDescr": "Worked on the development of ticket-booking solutions for museums, theaters and cultural institutions. Built and maintained interfaces using Angular 16, NgRx, Angular Material and Bootstrap. Integrated frontend logic with backend APIs to manage reservations. Participated in CI/CD processes using Azure Pipelines, ensuring stable deployments and continuous delivery. Focused on performance optimization, state management and creating reliable user flows for high-traffic booking platforms."
+      },
       "gcore": {
-        "experiencePosition": "Angular Front-End Developer, 2022 - Present",
+        "experiencePosition": "Software Engineer, 2022 - 2024",
         "experienceCompany": "Gcore",
         "experienceDescr": "Worked on the company's website. With the help of the angular, created the user interface/UX and the logical part of the site. I worked on a calculator where complex logic and requests to the server for data for the calculator were implemented. I used node.js and the nest framework for the backend."
-      },
-      "freelance": {
-        "experiencePosition": "Front-End Developer, 2020 - 2022",
-        "experienceCompany": "Freelance",
-        "experienceDescr": "Implementing websites and mobile applications with a responsive, mobile-first approach from concept through deployment, while constantly maintaining, optimizing, troubleshooting, and improving websites for various clients."
       }
     },
     "educationTitle": "EDUCATION",
@@ -30,7 +30,7 @@
         "educationDescr": "MGSI - External DPO - GDPR Compliance - Loi 25 in Quebec"
       },
       "rssSchool": {
-        "educationPosition": "Front-End / JavaScript, 2021 - 2022",
+        "educationPosition": "Software Engineer, 2021 - 2022",
         "educationDescr": "The Rolling Scopes School"
       },
       "freeCode": {
@@ -226,7 +226,7 @@
     },
     "tic-tac-toe": {
       "img": "./assets/portfolio/tic-tac-toe.png",
-      "url": "https://greg-front-end.github.io/tic-tac-toe",
+      "url": "https://greg-fullstack.github.io/tic-tac-toe",
       "pageSectionName": "Tic-Tac-Toe Game",
       "overview": "The Tic-Tac-Toe Game is a classic web-based game designed to provide entertainment and challenge players' strategic thinking. Developed using JavaScript, HTML, and SCSS.",
       "technologyStackTitle": "Technology Stack",
@@ -275,7 +275,7 @@
     },
     "shelter": {
       "img": "./assets/portfolio/poppy.png",
-      "url": "https://greg-front-end.github.io/shelter/public",
+      "url": "https://greg-fullstack.github.io/shelter/public",
       "pageSectionName": "About the Shelter",
       "overview": "The About the Shelter page offers insight into our shelter's mission and current status regarding animal welfare.",
       "technologyStackTitle": "Technology Stack",
@@ -324,7 +324,7 @@
     },
     "photo": {
       "img": "./assets/portfolio/photographer.png",
-      "url": "https://greg-front-end.github.io/photo-porftolio",
+      "url": "https://greg-fullstack.github.io/photo-porftolio",
       "pageSectionName": "Photographer",
       "overview": "The Photographer Portfolio is a showcase of the photographer's talent, providing a platform for displaying captivating visuals captured through the lens. Developed using JavaScript, HTML, and CSS, it delivers a concise yet engaging presentation without the need for frameworks or backend infrastructure.",
       "technologyStackTitle": "Technology Stack",
@@ -381,7 +381,7 @@
     },
     "travel": {
       "img": "./assets/portfolio/travel.png",
-      "url": "https://greg-front-end.github.io/Responsive-Travel-Website/",
+      "url": "https://greg-fullstack.github.io/Responsive-Travel-Website/",
       "pageSectionName": "Travel agency",
       "overview": "The Travel Agency Website serves as a platform for travelers to explore destinations, plan trips, and book accommodations. Developed using JavaScript, HTML, and CSS, it offers a comprehensive yet user-friendly interface without relying on frameworks or backend infrastructure.",
       "technologyStackTitle": "Technology Stack",
@@ -430,7 +430,7 @@
     },
     "furniture": {
       "img": "./assets/portfolio/furniture.png",
-      "url": "https://greg-front-end.github.io/web_site_Furniture_collection/app/",
+      "url": "https://greg-fullstack.github.io/web_site_Furniture_collection/app/",
       "pageSectionName": "Furniture collection",
       "overview": "The Furniture Collection Website showcases a curated collection of furniture pieces, providing users with a platform to explore, discover, and purchase quality furnishings. ",
       "technologyStackTitle": "Technology Stack",
@@ -479,7 +479,7 @@
     },
     "image": {
       "img": "./assets/portfolio/image-gallery.png",
-      "url": "https://greg-front-end.github.io/API-image-gallery/",
+      "url": "https://greg-fullstack.github.io/API-image-gallery/",
       "pageSectionName": "API image gallery",
       "overview": "The API Image Gallery is a platform for exploring and discovering high-quality images sourced from an external API, inspired by the popular Unsplash website. Developed using JavaScript, HTML, and CSS, it offers users a streamlined and visually appealing interface without the need for custom features like dark/light mode or a custom video player.",
       "technologyStackTitle": "Technology Stack",
@@ -528,7 +528,7 @@
     },
     "keyboard": {
       "img": "./assets/portfolio/virtual-keyboard.png",
-      "url": "https://greg-front-end.github.io/virtual-keyboard-mac/",
+      "url": "https://greg-fullstack.github.io/virtual-keyboard-mac/",
       "pageSectionName": "Virtual keyboard",
       "overview": "The Virtual Keyboard Page is an interactive web application that provides users with an on-screen keyboard for text input. Developed using JavaScript (with classes for an OOP approach).",
       "technologyStackTitle": "Technology Stack",
@@ -581,7 +581,7 @@
     },
     "bundler": {
       "img": "./assets/portfolio/bundler.png",
-      "url": "https://github.com/greg-front-end/html-css-bundler/tree/dev",
+      "url": "https://github.com/greg-fullstack/html-css-bundler/tree/dev",
       "pageSectionName": "HTML CSS bundler",
       "overview": "The HTML/CSS Bundler is a Node.js application designed to consolidate HTML and CSS files into a single index.html and style.css, while also cloning all asset files into the project's dist folder. Developed to enhance Node.js skills, this bundler streamlines the process of combining and organizing web project files.",
       "technologyStackTitle": "Technology Stack",
