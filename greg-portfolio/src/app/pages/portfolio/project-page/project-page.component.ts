@@ -34,9 +34,9 @@ export class ProjectPageComponent implements OnInit, OnDestroy {
     public ngOnInit(): void {
         const id = this.route.snapshot.paramMap.get('id')!;
         console.log(id);
-        this.card.set(this.translateService.translations[this.translateService.currentLang].portfolio[id])
+        this.card.set(this.translateService?.translations[this.translateService.currentLang]?.portfolio[id])
         this.projectLinkLabels = {
-            ...this.translateService.translations[this.translateService.currentLang].portfolio.projectLinksLabels,
+            ...this.translateService.translations[this.translateService.currentLang]?.portfolio?.projectLinksLabels,
         }
 
         this.onLanguageChangeSubscription = this.translateService.onLangChange.subscribe((translation) => {
