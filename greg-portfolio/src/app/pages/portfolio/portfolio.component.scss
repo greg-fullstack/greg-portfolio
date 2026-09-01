@@ -4,39 +4,50 @@
   height: 100%;
 
   &-content-wrapper {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   &-filter {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     overflow: auto;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
 
     &-btn {
-      background-color: $payne-grey;
-      color: $anti-flash-white;
+      background-color: transparent;
+      color: $text-muted;
+      border: 1px solid $border;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.8125rem;
+      font-family: $font-mono;
       transform: scale(1);
-      border-radius: 4px;
       text-wrap: nowrap;
+      transition: $transition-2;
 
       &.active {
-        background-color: $cadet-grey;
+        background: $accent-gradient;
+        color: $on-accent;
+        font-weight: 600;
+        border-color: transparent;
         pointer-events: none;
       }
 
       &:not(.active):hover {
-        background-color: $powder-blue;
+        color: $text-primary;
+        border-color: $text-muted;
+        transform: scale(1);
       }
     }
   }
 
   &-works-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
   }
 
   @media (max-width: $mobile) {

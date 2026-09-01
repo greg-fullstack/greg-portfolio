@@ -15,7 +15,7 @@
             {{ "about.aboutMe" | translate }}
           </p>
           <button
-            class="about-button button"
+            class="about-button button button-primary"
             (click)="downloadCV()"
             title="Download cv"
           >
@@ -32,28 +32,30 @@
             {{ "about.experienceTitle" | translate }}
           </h2>
 
-          <div class="work">
-            <span class="position">
-              {{ "about.workData.sicomoro.experiencePosition" | translate }}
-            </span>
-            <span class="company">{{
-              "about.workData.sicomoro.experienceCompany" | translate
-            }}</span>
-            <p class="descr">
-              {{ "about.workData.sicomoro.experienceDescr" | translate }}
-            </p>
-          </div>
+          <div class="timeline">
+            <div class="work">
+              <span class="position">
+                {{ "about.workData.sicomoro.experiencePosition" | translate }}
+              </span>
+              <span class="company">{{
+                "about.workData.sicomoro.experienceCompany" | translate
+              }}</span>
+              <p class="descr">
+                {{ "about.workData.sicomoro.experienceDescr" | translate }}
+              </p>
+            </div>
 
-          <div class="work">
-            <span class="position">
-              {{ "about.workData.gcore.experiencePosition" | translate }}
-            </span>
-            <span class="company">{{
-              "about.workData.gcore.experienceCompany" | translate
-            }}</span>
-            <p class="descr">
-              {{ "about.workData.gcore.experienceDescr" | translate }}
-            </p>
+            <div class="work">
+              <span class="position">
+                {{ "about.workData.gcore.experiencePosition" | translate }}
+              </span>
+              <span class="company">{{
+                "about.workData.gcore.experienceCompany" | translate
+              }}</span>
+              <p class="descr">
+                {{ "about.workData.gcore.experienceDescr" | translate }}
+              </p>
+            </div>
           </div>
         </section>
 
@@ -62,39 +64,41 @@
             {{ "about.educationTitle" | translate }}
           </h2>
 
-          <div class="education">
-            <span class="position">{{
-              "about.educationData.fitness.educationPosition" | translate
-            }}</span>
-            <span class="descr">{{
-              "about.educationData.fitness.educationDescr" | translate
-            }}</span>
-          </div>
+          <div class="education-grid">
+            <div class="education">
+              <span class="position">{{
+                "about.educationData.fitness.educationPosition" | translate
+              }}</span>
+              <span class="descr">{{
+                "about.educationData.fitness.educationDescr" | translate
+              }}</span>
+            </div>
 
-          <div class="education">
-            <span class="position">{{
-              "about.educationData.freeCode.educationPosition" | translate
-            }}</span>
-            <span class="descr">{{
-              "about.educationData.freeCode.educationDescr" | translate
-            }}</span>
-          </div>
+            <div class="education">
+              <span class="position">{{
+                "about.educationData.freeCode.educationPosition" | translate
+              }}</span>
+              <span class="descr">{{
+                "about.educationData.freeCode.educationDescr" | translate
+              }}</span>
+            </div>
 
-          <div class="education">
-            <span class="position">{{
-              "about.educationData.rssSchool.educationPosition" | translate
-            }}</span>
-            <span class="descr">{{
-              "about.educationData.rssSchool.educationDescr" | translate
-            }}</span>
-          </div>
-          <div class="education">
-            <span class="position">{{
-              "about.educationData.college.educationPosition" | translate
-            }}</span>
-            <span class="descr">{{
-              "about.educationData.college.educationDescr" | translate
-            }}</span>
+            <div class="education">
+              <span class="position">{{
+                "about.educationData.rssSchool.educationPosition" | translate
+              }}</span>
+              <span class="descr">{{
+                "about.educationData.rssSchool.educationDescr" | translate
+              }}</span>
+            </div>
+            <div class="education">
+              <span class="position">{{
+                "about.educationData.college.educationPosition" | translate
+              }}</span>
+              <span class="descr">{{
+                "about.educationData.college.educationDescr" | translate
+              }}</span>
+            </div>
           </div>
         </section>
 
@@ -103,19 +107,11 @@
             {{ "about.languageTitle" | translate }}
           </h2>
 
-          <div class="education">
-            <span class="position lang"
-              >{{ "about.languageData.en" | translate }} |
-            </span>
-            <span class="position lang"
-              >{{ "about.languageData.es" | translate }} |
-            </span>
-            <span class="position lang"
-              >{{ "about.languageData.arm" | translate }} |
-            </span>
-            <span class="position lang">
-              {{ "about.languageData.ru" | translate }}</span
-            >
+          <div class="language-tags">
+            <span class="position lang">{{ "about.languageData.en" | translate }}</span>
+            <span class="position lang">{{ "about.languageData.es" | translate }}</span>
+            <span class="position lang">{{ "about.languageData.arm" | translate }}</span>
+            <span class="position lang">{{ "about.languageData.ru" | translate }}</span>
           </div>
         </section>
       </div>

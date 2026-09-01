@@ -4,7 +4,9 @@
     "title": "I'm Greg Martirosian",
     "titleSpan": "Software Engineer",
     "firstDescr": "Hi, thank you for visiting my portfolio! As a sofware engineer, I focus on crafting intuitive and engaging user experiences. ",
-    "secondDescr": "Here, you can discover my latest projects, dive into my skill set, and see the innovative solutions I've developed. I'm excited to share my work with you!"
+    "secondDescr": "Here, you can discover my latest projects, dive into my skill set, and see the innovative solutions I've developed. I'm excited to share my work with you!",
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV"
   },
   "about": {
     "pageSectionName": "About me",

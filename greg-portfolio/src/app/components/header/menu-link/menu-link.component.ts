@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import { dataRouters } from "../dataRouters";
-import { RouterLink } from "@angular/router";
+import { RouterLink, RouterLinkActive } from "@angular/router";
 import { MenuToggleService } from "../../../core/services/menu-toggle.service";
 
 interface DataRoutersInterfaces {
@@ -13,7 +13,8 @@ interface DataRoutersInterfaces {
   selector: 'app-menu-link',
   standalone: true,
   imports: [
-    RouterLink
+    RouterLink,
+    RouterLinkActive
   ],
   templateUrl: './menu-link.component.html',
   styleUrl: './menu-link.component.scss'

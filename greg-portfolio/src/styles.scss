@@ -5,10 +5,16 @@
   margin: 0;
 }
 
+html {
+  color-scheme: dark;
+}
+
 body {
-  font-family: monospace, sans-serif;
+  font-family: $font-body;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  background-color: $bg-page;
+  color: $text-primary;
 }
 
 h1,
@@ -16,22 +22,25 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1;
+  font-family: $font-heading;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 a,
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 
 a {
-  color: $payne-grey;
+  color: $text-primary;
   text-decoration: none;
-  transition: 0.2s;
+  transition: $transition-2;
   cursor: pointer;
 
   &:hover {
-    color: $powder-blue;
+    color: $accent;
   }
 }
 
@@ -53,13 +62,12 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s;
+  transition: $transition-3;
 }
-
 
 .isMenuActive {
   .underlay {
@@ -73,19 +81,33 @@ a {
   perspective: 1000px;
   transform-style: preserve-3d;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: $transition-3;
 }
 
 .page-wrapper {
   height: 100%;
   backface-visibility: hidden;
-  background-color: #f1f1f1;
-  transition: all 0.3s;
+  background-color: $bg-page;
+  background-image:
+    radial-gradient(60% 45% at 85% -10%, rgba($accent, 0.10), transparent 60%),
+    radial-gradient(40% 30% at -5% 15%, rgba($accent-soft, 0.06), transparent 60%);
+  background-repeat: no-repeat;
+  transition: $transition-3;
 }
 
 .section-title {
-  color: $payne-grey;
+  color: $text-primary;
   margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  font-family: $font-mono;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  &::before {
+    content: '</> ';
+    color: $accent;
+  }
 }
 
 .section {
@@ -100,18 +122,18 @@ a {
   h1 {
     font-size: 2rem;
     position: relative;
-    color: $cadet-grey;
-    font-weight: 500;
+    color: $text-primary;
+    font-weight: 600;
     z-index: 2;
   }
 
   span {
-    color: $powder-blue;
+    color: $accent;
     position: absolute;
     top: 1rem;
     left: 1.5rem;
-    font-weight: 400;
-    opacity: 0.2;
+    font-weight: 600;
+    opacity: 0.08;
   }
 
   @media (max-width: $mobile) {
@@ -132,11 +154,39 @@ a {
   border: none;
   padding: 0.5rem 1.5rem;
   background-color: inherit;
-  transition: 0.2s;
+  transition: $transition-2;
   cursor: pointer;
+  font-family: $font-body;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+  }
+}
+
+.button-primary {
+  background: $accent-gradient;
+  color: $on-accent;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba($accent, 0.18);
+
+  &:hover {
+    box-shadow: 0 10px 28px rgba($accent, 0.3);
+    transform: translateY(-2px) scale(1);
+  }
+}
+
+.button-ghost {
+  background: transparent;
+  color: $text-primary;
+  border: 1px solid $border;
+  border-radius: 0.5rem;
+  font-weight: 500;
+
+  &:hover {
+    border-color: $accent;
+    color: $accent;
+    transform: translateY(-2px) scale(1);
   }
 }
 
@@ -162,11 +212,11 @@ video {
   }
 
   ::-webkit-scrollbar-track {
-    background: $payne-grey;
+    background: $bg-surface;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $payne-grey;
+    background-color: $border;
     border-radius: 4px;
   }
 

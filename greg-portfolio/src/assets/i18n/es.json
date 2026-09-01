@@ -4,7 +4,9 @@
     "title": "Soy Greg Martirosian",
     "titleSpan": "Ingeniero de software",
     "firstDescr": "¡Hola y bienvenido, gracias por visitar mi portfolio! Como ingeniero de software, me enfoco en crear experiencias de usuario intuitivas y atractivas.",
-    "secondDescr": "Aquí puedes descubrir mis últimos proyectos, profundizar en mis habilidades y ver las soluciones innovadoras que he desarrollado. ¡Estoy emocionado de compartir mi trabajo contigo!"
+    "secondDescr": "Aquí puedes descubrir mis últimos proyectos, profundizar en mis habilidades y ver las soluciones innovadoras que he desarrollado. ¡Estoy emocionado de compartir mi trabajo contigo!",
+    "viewProjects": "Ver Proyectos",
+    "downloadCv": "Descargar CV"
   },
   "about": {
     "pageSectionName": "Sobre mi",

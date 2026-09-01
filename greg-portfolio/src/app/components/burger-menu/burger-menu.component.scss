@@ -2,18 +2,22 @@
 
 .header {
   &-burger {
-    padding: 1rem;
+    display: none;
+    padding: 0.5rem;
     cursor: pointer;
 
     svg {
-      width: 100%;
-      margin-top: 0.5rem;
-      max-width: 100%;
+      width: 1.75rem;
+      height: 1.75rem;
 
       path {
-        fill: $cadet-grey;
-        transition: all 0.2s;
+        fill: $text-primary;
+        transition: $transition-2;
       }
+    }
+
+    &:hover svg path {
+      fill: $accent;
     }
 
     &.active {
@@ -27,14 +31,12 @@
 
   @media (max-width: $mobile) {
     &-burger {
+      display: block;
       height: 2rem;
-      padding: 0;
 
       svg {
-        max-width: initial;
-        width: 2rem;
-        height: 2rem;
-        margin-top: 0;
+        width: 1.75rem;
+        height: 1.75rem;
       }
     }
   }

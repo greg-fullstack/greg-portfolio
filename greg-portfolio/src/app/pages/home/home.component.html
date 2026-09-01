@@ -1,34 +1,57 @@
 <div class="home">
     <div class="wrapper">
         @if (isContentLoadedService.isTranslationLoaded()) {
-            <div class="page-section-name">
-                <h1>
-                    {{ 'home.pageSectionName' | translate }}
-                    <span>{{ 'home.pageSectionName' | translate }}</span>
+            <div class="home-hero">
+                <p class="home-eyebrow">
+                    <span class="home-eyebrow-dot"></span>
+                    {{ 'home.pageSectionName' | translate }}, I'm
+                </p>
+
+                <h1 class="home-title">
+                    {{ 'home.title' | translate }}
+                    <span class="home-title-accent">{{ 'home.titleSpan' | translate }}</span>
                 </h1>
+
+                <div class="home-descr">
+                    <p>{{ 'home.firstDescr' | translate }}</p>
+                    <p>{{ 'home.secondDescr' | translate }}</p>
+                </div>
+
+                <div class="home-cta">
+                    <a class="button button-primary" routerLink="portfolio">
+                        {{ 'home.viewProjects' | translate }}
+                    </a>
+                    <button class="button button-ghost" (click)="downloadCV()">
+                        {{ 'home.downloadCv' | translate }}
+                        <svg-icon class="home-cta-icon" src="./assets/icons/download.svg"></svg-icon>
+                    </button>
+                </div>
+
+                <div class="home-contact">
+                    <a class="home-contact-item" href="mailto:greg.martinez.dev@gmail.com">greg.martinez.dev&#64;gmail.com</a>
+                    <span class="home-contact-sep">&middot;</span>
+                    <a class="home-contact-item" href="tel:+34641294406">+34 641 294 406</a>
+                </div>
+
+                <div class="home-socials">
+                    <a class="home-social-link" href="https://github.com/greg-fullstack" target="_blank" title="GitHub">
+                        <img src="./assets/icons/github.svg" alt="GitHub">
+                    </a>
+                    <a class="home-social-link" href="https://www.linkedin.com/in/greg-martirosian/" target="_blank" title="LinkedIn">
+                        <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </div>
+
+                <div class="home-languages">
+                    <span>{{ 'about.languageData.en' | translate }}</span>
+                    <span>{{ 'about.languageData.es' | translate }}</span>
+                    <span>{{ 'about.languageData.ru' | translate }}</span>
+                    <span>{{ 'about.languageData.arm' | translate }}</span>
+                </div>
             </div>
 
-            <div class="home-wrapper">
-                <div class="home-title-wrapper">
-                    <h1 class="home-title">
-                        {{ 'home.title' | translate }}
-                        <span>{{ 'home.titleSpan' | translate }}</span>
-                    </h1>
-
-                    <div class="home-descr">
-                        <p>
-                            {{ 'home.firstDescr' | translate }}
-                        </p>
-
-                        <p>
-                            {{ 'home.secondDescr' | translate }}
-                        </p>
-                    </div>
-                </div>
-
-                <div class="home-image-wrapper">
-                    <img src="./assets/pages/home/globe-gif.gif" />
-                </div>
+            <div class="home-image-wrapper">
+                <img src="./assets/pages/home/globe-gif.gif" alt="" />
             </div>
         } @else {
             <app-loader></app-loader>

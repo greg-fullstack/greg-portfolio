@@ -103,5 +103,10 @@
         }
       }
     }
+  },
+  "cli": {
+    "cache": {
+      "path": "/tmp/ng-cache-greg-portfolio"
+    }
   }
 }

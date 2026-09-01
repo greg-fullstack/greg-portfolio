@@ -1,4 +1,5 @@
-import { Component, ElementRef, Inject, inject, OnInit, PLATFORM_ID, viewChild } from '@angular/core';
+import { Component, Inject, inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { BurgerMenuComponent } from "../burger-menu/burger-menu.component";
 import { MenuLinkComponent } from "./menu-link/menu-link.component";
 import { MenuToggleService } from "../../core/services/menu-toggle.service";
@@ -11,6 +12,7 @@ import { SvgIconComponent } from "angular-svg-icon";
   selector: 'app-header',
   standalone: true,
   imports: [
+    RouterLink,
     BurgerMenuComponent,
     MenuLinkComponent,
     SvgIconComponent,
@@ -20,7 +22,7 @@ import { SvgIconComponent } from "angular-svg-icon";
 })
 export class HeaderComponent implements OnInit {
   private translateService = inject(TranslateService);
-  
+
   public menuToggleService = inject(MenuToggleService);
   public selectedLang = '';
   public langs = langs;

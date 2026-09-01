@@ -1,23 +1,30 @@
 <header class="header" [class.isMenuActive]="menuToggleService.isMenuActive()">
-    <div class="header-wrapper">
-        <app-burger-menu />
+    <div class="header-inner">
+        <a class="header-logo" routerLink="/" title="Greg Martirosian">
+            <span class="header-logo-mark">GM</span>
+        </a>
 
-        <div class="header-list" [class.isMenuActive]="menuToggleService.isMenuActive()">
+        <nav class="header-list" [class.isMenuActive]="menuToggleService.isMenuActive()">
             <app-menu-link />
-        </div>
+        </nav>
 
-    </div>
+        <div class="header-actions">
+            <div class="header-lang-switcher-items">
+                @for (lang of langs; track $index) {
+                    <button class="header-lang-switcher-item button"
+                            [class.activeLang]="selectedLang === lang"
+                            (click)="onClickedLang(lang)"
+                    >
+                        <svg-icon [src]="'../../../assets/icons/flags/' + lang + '.svg'"></svg-icon>
+                    </button>
+                }
+            </div>
 
-    <div class="header-lang-switcher-wrapper">
-        <div class="header-lang-switcher-items">
-            @for (lang of langs; track $index) {
-                <button class="header-lang-switcher header-lang-switcher-item button"
-                        [class.activeLang]="selectedLang === lang"
-                        (click)="onClickedLang(lang)"
-                >
-                    <svg-icon [src]="'../../../assets/icons/flags/' + lang + '.svg'"></svg-icon>
-                </button>
-            }
+            <a class="header-cv-btn button-primary button" routerLink="about" title="Download CV">
+                CV
+            </a>
+
+            <app-burger-menu />
         </div>
     </div>
 </header>

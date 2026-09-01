@@ -1,59 +1,27 @@
 @use "../assets/scss/variables" as *;
 
 .app {
-  display: grid;
-  grid-template-columns: 4rem 1fr;
-  grid-template-rows: 1fr 4rem;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   height: 100svh;
+  background-color: $bg-page;
 
   app-header {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    flex: 0 0 auto;
+    width: 100%;
   }
 
   .main {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: grey;
-
+    flex: 1 1 auto;
+    min-height: 0;
+    position: relative;
+    background-color: $bg-page;
   }
 
   app-footer {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    flex: 0 0 auto;
+    width: 100%;
+    height: $footer-height;
   }
-  
-  @media (max-width: $mobile) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 4rem 1fr 4.5rem;
-    transition: $transition-2;
-
-    &.isMenuActive {
-      grid-template-rows: 8rem 1fr 4.5rem;
-    }
-
-    app-header {
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
-    .main {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
-    }
-
-    app-footer {
-      grid-row-start: 3;
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-  }
-
 }

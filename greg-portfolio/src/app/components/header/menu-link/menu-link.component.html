@@ -1,11 +1,11 @@
 @for (route of dataRouters; track route.label) {
     <a
-        class="header-item button"
-        [class.isShowLinks]="menuToggleService.isMenuActive()"
+        class="header-item"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: route.path === '/' }"
         [routerLink]="route.path"
         (click)="onClickMenuItem()"
     >
-        {{ route.label}}
+        {{ route.label }}
     </a>
 }
-
