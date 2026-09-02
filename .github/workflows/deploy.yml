@@ -1,8 +1,9 @@
 name: Deploy portfolio to GitHub Pages
 
-# The site is now plain static HTML/CSS/JS (no Angular build step), so this
-# workflow just publishes the repository as-is to the gh-pages branch,
-# replacing the old local "ng build && angular-cli-ghpages" flow.
+# The site (in greg-portfolio/) is now plain static HTML/CSS/JS — no Angular
+# build step — so this workflow just publishes that folder's contents as-is
+# to the gh-pages branch, replacing the old local
+# "ng build && angular-cli-ghpages" deploy flow.
 
 on:
   push:
@@ -23,5 +24,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          exclude_assets: '.github,.git,README.md,.gitignore,.editorconfig'
+          publish_dir: ./greg-portfolio
+          exclude_assets: '.github,README.md,.gitignore,.editorconfig'
