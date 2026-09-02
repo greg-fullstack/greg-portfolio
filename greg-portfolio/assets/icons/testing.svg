@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img">
+<defs><linearGradient id="lime" x1="18%" y1="12%" x2="84%" y2="88%"><stop offset="0" stop-color="#dfff78"/><stop offset="0.55" stop-color="#c8f367"/><stop offset="1" stop-color="#aedd58"/></linearGradient></defs>
+<circle cx="128" cy="128" r="112" fill="url(#lime)"/>
+<g fill="none" stroke="#0e0f0a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M85 65H70a8 8 0 0 0-8 8v120a8 8 0 0 0 8 8h112a8 8 0 0 0 8-8v-28M171 65h14a7 7 0 0 1 7 7v50"/>
+<rect x="94" y="55" width="67" height="25" rx="7" fill="#0e0f0a" stroke="none"/>
+<path d="M112 55c0-19 28-19 28 0"/>
+<path d="m83 108 8 8 14-17m-22 39 8 8 14-17m-22 39 8 8 14-17m18-53h38m-38 32h26m-26 31h11"/>
+<circle cx="163" cy="161" r="31" fill="url(#lime)"/>
+<circle cx="163" cy="161" r="9"/>
+<path d="M154 147l-7-9m25 9 7-9m-26 39-7 8m26-8 8 8m-30-25h-10m36 0h10m-22-14v30m-8-22h16" stroke-width="5"/>
+<path d="m185 184 22 22" stroke-width="11"/>
+
+</g>
+</svg>

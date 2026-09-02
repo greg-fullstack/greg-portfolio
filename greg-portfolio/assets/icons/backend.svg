@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img">
+<defs><linearGradient id="lime" x1="18%" y1="12%" x2="84%" y2="88%"><stop offset="0" stop-color="#dfff78"/><stop offset="0.55" stop-color="#c8f367"/><stop offset="1" stop-color="#aedd58"/></linearGradient></defs>
+<circle cx="128" cy="128" r="112" fill="url(#lime)"/>
+<g fill="none" stroke="#0e0f0a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+
+<rect x="53" y="64" width="97" height="27" rx="6" fill="#0e0f0a" stroke="none"/>
+<rect x="53" y="99" width="97" height="27" rx="6" fill="#0e0f0a" stroke="none"/>
+<rect x="53" y="134" width="97" height="27" rx="6" fill="#0e0f0a" stroke="none"/>
+<g fill="#d7f86c" stroke="none"><circle cx="69" cy="78" r="5"/><circle cx="85" cy="78" r="5"/><circle cx="69" cy="113" r="5"/><circle cx="85" cy="113" r="5"/><circle cx="69" cy="148" r="5"/><circle cx="85" cy="148" r="5"/></g>
+<path d="M103 161v33m-40 0h80"/>
+<circle cx="103" cy="194" r="7" fill="url(#lime)"/>
+<path fill="#0e0f0a" d="M137 117c0-12 58-12 58 0v66c0 17-58 17-58 0Z" stroke="none"/>
+<ellipse cx="166" cy="117" rx="29" ry="11" fill="url(#lime)"/>
+<path d="M138 139c8 10 47 11 56 0m-56 22c8 10 47 11 56 0m-56 22c8 10 47 11 56 0" stroke="#c8f367" stroke-width="4"/>
+
+</g>
+</svg>
