@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img">
+<defs><linearGradient id="lime" x1="18%" y1="12%" x2="84%" y2="88%"><stop offset="0" stop-color="#dfff78"/><stop offset="0.55" stop-color="#c8f367"/><stop offset="1" stop-color="#aedd58"/></linearGradient></defs>
+<circle cx="128" cy="128" r="112" fill="url(#lime)"/>
+<g fill="none" stroke="#0e0f0a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+
+<rect x="54" y="63" width="148" height="132" rx="8"/>
+<path fill="#0e0f0a" d="M54 71a8 8 0 0 1 8-8h132a8 8 0 0 1 8 8v23H54Z" stroke="none"/>
+<g fill="#d7f86c" stroke="none"><circle cx="70" cy="79" r="5"/><circle cx="86" cy="79" r="5"/><circle cx="102" cy="79" r="5"/></g>
+<path d="m91 123-17 17 17 17m36-34 17 17-17 17m-19-42-13 50m70-43h28m-28 17h28m-28 17h28"/>
+<rect x="165" y="166" width="29" height="18" rx="3" fill="#0e0f0a" stroke="none"/>
+
+</g>
+</svg>
