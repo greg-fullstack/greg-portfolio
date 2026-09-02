@@ -389,6 +389,12 @@
       var sec = document.getElementById(id);
       if (sec && sec.getBoundingClientRect().top <= 150) active = id;
     });
+    // The last section can be shorter than the viewport, so its top may
+    // never cross the 150px threshold above — the page simply can't scroll
+    // that far. Once we've hit the bottom of the page, force it active.
+    if (y + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+      active = sectionIds[sectionIds.length - 1];
+    }
     document.querySelectorAll('[data-navlink]').forEach(function (a) {
       a.classList.toggle('active', a.getAttribute('data-navlink') === active);
     });
