@@ -440,8 +440,8 @@ main {
 .chip.active:hover { transform: none; }
 
 .chip-icon {
-  display: none; flex: none; align-items: center; justify-content: center;
-  width: 18px; height: 18px; font-size: 15px; line-height: 1; color: var(--accent);
+  display: flex; flex: none; align-items: center; justify-content: center;
+  width: 24px; height: 24px; font-size: 19px; line-height: 1; color: var(--accent);
 }
 .chip-icon img { width: 100%; height: 100%; display: block; }
 .chip.active .chip-icon { color: var(--on-accent); }
@@ -463,7 +463,7 @@ main {
    keep the filter rows compact and single-line — no padding, so the icon
    fills the whole button. */
 @media (max-width: 1010px) {
-  .chip-icon { display: flex; width: 40px; height: 40px; font-size: 24px; }
+  .chip-icon { width: 40px; height: 40px; font-size: 24px; }
   .chip-label { display: none; }
   .chip, #project-tabs .chip { padding: 0; }
 }
